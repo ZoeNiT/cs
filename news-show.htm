@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<#include "headFile.htm">
+</head>
+<body>
+<#include "head.htm">
+<div class="cq-cont" style="background:url({ms:global.host/}/{ms:global.style/}/images/1-15110qqk1n9.jpg) top center no-repeat fixed;">
+	<div class="cqc-in">
+		<div class="cqc-leftnav">
+			<div class="top"> <span>新闻活动</span> </div>
+			<ul>
+			{ms:channel typeid=59 class=hover}
+				<li class="[field.class/]"><a href='{ms:global.url/}[field.typelink/]'><i></i><span>[field.typetitle/]</span><b> > </b></a></li>
+			{/ms:channel}
+			</ul>
+		</div>
+		<div class="cqc-inav">
+			<ul>
+			</ul>
+		</div>
+		<div class="cqc-itit"> NEWS</div>
+		<div class="cqc-imain">
+			<div class="cqc-imainr" style="color: #666;">
+				<div id="content" class="content">
+					<div class="box help-content p20" style="background: none;border: none;">
+						<h1 class="title tc" style="background: none;color: #000;border:none;">
+							<span class="f16">{ms:field.title/}</span>
+						</h1>
+						<div class="clearfix" style="text-align:center"><span class="tc show-time">{ms:field.date?string("yyyy-MM-dd")/}</span></div>
+						<div class="mt10">
+							<span style="color: rgb(102, 102, 102); font-family: Tahoma, Helvetica, Arial, SimSun, 宋体; line-height: 18px;">
+								   {ms:field.content/}
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<#include "footer.htm">
+</body>
+</html>
